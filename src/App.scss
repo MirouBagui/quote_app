@@ -1,0 +1,45 @@
+/*  let's build a quote visualiser */
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+// general setting
+@mixin center {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Roboto' , sans-serif;
+    color: #202020;
+    background-color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#text {
+    color: #333;
+    font-family: 'Redressed', serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  
+  .content {
+    @include center();    
+    grid-template-columns: 1fr auto;
+    max-width: 922px;
+    margin: auto;
+  }
+  .btn {
+    cursor: pointer;
+  }
+@import "~bootstrap/scss/bootstrap";
