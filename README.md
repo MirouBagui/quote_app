@@ -1,6 +1,6 @@
 # Simple Quote Machine
 
-A mix of HTML, JavaScript, CSS, Bootstrap, SASS, React project.
+A mix of HTML, JavaScript Bootstrap, SCSS, React project.
 
 ## Available Scripts
 
