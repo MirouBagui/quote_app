@@ -20,7 +20,6 @@ export default class App extends Component {
     }
   // thanx to Akhil Aravind https://stackoverflow.com/questions/59715034/react-fetch-api-quote-random-generator?fbclid=IwAR2yd-PADcCjgq0vKO-rusF_gGNSrCgrjnmbLclE8hYNVyNi_3oa7Hbu1G4
     componentDidMount() {
-      console.log("COM D Mount")
       const API = 'https://type.fit/api/quotes'
       fetch(API)
           .then((response) => response.json())
